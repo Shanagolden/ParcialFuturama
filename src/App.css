@@ -1,0 +1,72 @@
+/* Reset default styles from template */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para el indicador de carga */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f7fb;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(53, 99, 233, 0.2);
+  border-radius: 50%;
+  border-top-color: #3563e9;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode .loading-container {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.dark-mode .loading-spinner {
+  border-color: rgba(93, 124, 228, 0.2);
+  border-top-color: #5d7ce4;
+}
+
+/* Estilos para el modo S */
+.s-mode .loading-container {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+}
+
+.s-mode .loading-spinner {
+  border-color: rgba(185, 28, 28, 0.2);
+  border-top-color: #b91c1c;
+}
+
+/* Combinación de modo oscuro y modo S */
+.dark-mode.s-mode .loading-container {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+
+.dark-mode.s-mode .loading-spinner {
+  border-color: rgba(252, 165, 165, 0.2);
+  border-top-color: #fca5a5;
+}
