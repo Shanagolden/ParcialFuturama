@@ -17,7 +17,7 @@ function About() {
           </div>
           <h2>Gustavo Garcia "Ing. Multimedia"</h2>
           <p>Proxeneta</p>
-          <p>Amante de los beatles</p>
+          <p>Amante De Los Beatles</p>
           <p>Contacto: +57 300 521 0090</p>
         </div>
         <div className="student-card">
